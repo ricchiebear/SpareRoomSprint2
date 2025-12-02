@@ -92,6 +92,21 @@ getBookingsForGuest(int guestId)	Returns all bookings belonging to a particular 
 getBookingsForAccommodation(int accommodationId)	Returns all bookings for a specific accommodation.
 isAccommodationAvailable(int accommodationId, LocalDate start, LocalDate end)	Checks existing bookings and returns true only if there is no overlapping booking.
 
+Core Booking API (BookingSystem)
+
+Method names / signatures – adjust to match your code.
+Method	Description
+addHost(Host host)	Registers a new host in the system.
+addGuest(Guest guest)	Registers a new guest.
+addAccommodation(Accommodation a)	Adds a new accommodation and links it to a host.
+createBooking(int guestId, int accommodationId, LocalDate start, LocalDate end)	Validates input, checks availability, creates and stores a new Booking, and returns it.
+getBookingsForGuest(int guestId)	Returns all bookings belonging to a particular guest.
+getBookingsForAccommodation(int accommodationId)	Returns all bookings for a specific accommodation.
+isAccommodationAvailable(int accommodationId, LocalDate start, LocalDate end)	Checks existing bookings and returns true only if there is no overlapping booking.
+
+<img width="468" height="349" alt="image" src="https://github.com/user-attachments/assets/2e8de808-1bab-4a64-ac13-73258408234f" />
+
+
  # Booking Rules
  
 For an accommodation with ID accommodationId, when creating a booking for [startDate, endDate]:
